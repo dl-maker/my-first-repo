@@ -1,0 +1,42 @@
+*, *::before, *::after { box-sizing: border-box; }
+body{
+    margin:0px;
+}
+
+.header-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 120px;
+    padding:8px 16px;
+    
+
+}
+
+.header-bar ul{
+    display: flex;       /* items side by side */
+    gap: 24px;           /* space between them */
+    list-style: none;    /* removes the bullets */
+    margin: 0;
+    padding: 0;          /* removes the indent the list leaves for bullets */
+}
+
+.site-header{
+    border-bottom: 1px solid rgb(180, 178, 178);
+}
+
+
+
+.site-footer{
+    margin:20px 120px;
+    
+}
+
+.site-main{
+    border-bottom: 1px solid rgb(180, 178, 178);
+}
+
+.main-container{
+    margin:0 120px;
+    padding-bottom:20px;
+}
