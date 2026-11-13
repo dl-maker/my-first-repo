@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taskly</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header>
+    <header class="site-header">
         <div class="header-bar">
             <h1>Taskly</h1>
-            <nav>
+            <nav class="site-nav">
                 <ul>
                     <li>
                         <a class="site-nav_link" href="index.html" aria-current="page">Tasks</a>
@@ -21,26 +22,34 @@
             </nav>
         </div>
     </header>
-    <main>
-        <h1>My tasks</h1>
-        <form>
-            <input type="text" id="taskType" name="taskType">
-            <button type="submit">Add</btn>
-        </form>
-        <div class="task-condition">
-            <button type="button">All</button>
-            <button type="button">Active</button>
-            <button type="button">Completed</button>
+    <main class="site-main">
+        <div class="main-container">
+
+            <h1>My tasks</h1>
+            <form class="todo-form">
+                <input type="text" id="taskType" name="taskType" placeholder="What needs to be done?">
+                <button type="submit" class="btn">Add</button>
+            </form>
+            <div class="task-condition">
+                <button type="button">All</button>
+                <button type="button">Active</button>
+                <button type="button">Completed</button>
+            </div>
+            <ul class="todo-list">
+                <li class="todo-item">
+                    <input type="checkbox" id="task-1">
+                    <label for="task-1">Buy milk</label>
+                    <button type="button" class="todo-delete" aria-label="Delete task">×</button>
+                </li>
+
+            </ul>
         </div>
-        <ul class="todo-list">
-            <li class="todo-item"></li>
-        </ul>
-    <div>
-        <p>Tasks left:</p>
-    </div>
+        <div>
+            <p>Tasks left:</p>
+        </div>
     </main>
    
-    <footer>
+    <footer class="site-footer">
         <span>Taskly, a practise project</span>
     </footer>
 </body>
