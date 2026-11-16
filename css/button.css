@@ -1,13 +1,13 @@
 .btn{
     display: inline-block;
-    padding: 0.75rem 1.25rem;
-    background: blue;
+    padding: var(--space-md) var(--space-xl);
+    background: var(--color-primary);
     color: white; 
     font-weight: 600; 
     text-decoration: none;
     cursor: pointer;
-    border-radius: 0.5rem; 
+    border-radius: var(--radius); 
 }
 .btn:hover{
-    background: #244cab;
+    background: var(--color-primary-hover);
 }

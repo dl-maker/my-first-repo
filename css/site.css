@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     margin:0 120px;
-    padding:8px 16px;
+    padding: var(--space-sm) var(--space-lg);
     
 
 }
@@ -14,30 +14,30 @@
 
 .header-bar ul{
     display: flex;       /* items side by side */
-    gap: 24px;           /* space between them */
+    gap: var(--space-2xl);           /* space between them */
     list-style: none;    /* removes the bullets */
     margin: 0;
     padding: 0;          /* removes the indent the list leaves for bullets */
 }
 
 .site-header{
-    border-bottom: 1px solid rgb(108, 101, 101);
+    border-bottom: 1px solid var(--color-border);
 }
 
 
 
 .site-footer{
     text-align: center;
-    padding: 20px;
+    padding: var(--space-xl);
 }
 
 
 .site-main{
-    border-bottom: 1px solid rgb(108, 101, 101);
+    border-bottom: 1px solid var(--color-border);
 }
 
 .site-nav_link{
-    color: #5b6676;
+    color: var(--color-text-muted);
     text-decoration: none;
 
 }
@@ -45,7 +45,7 @@
 
 .site-nav_link:hover,
 .site-nav_link[aria-current="page"]{
-    color: black;
+    color: var(--color-text);
     text-decoration: underline;
     text-underline-offset: 6px;
     text-decoration-thickness: 2px;

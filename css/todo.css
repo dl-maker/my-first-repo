@@ -4,17 +4,17 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;                 
+    gap: var(--space-sm);                 
 }
 
 .todo-item{
     display: flex;
     align-items: center;
-    gap: 0.75rem;
-    padding: 1rem 1.25rem;
-    background: white;
-    border: 1px solid #d9dee6;
-    border-radius: 0.5rem;
+    gap: var(--space-md);
+    padding: var(--space-lg) var(--space-xl);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
 }
 
 .todo-item input[type="checkbox"]{
@@ -30,59 +30,59 @@
     background: none;
     border: none;
     font-size: 1.25rem;
-    color: #5b6676;
+    color: var(--color-text-muted);
     cursor: pointer;
 }
 
 .todo-delete:hover{
-    color: #c0392b;              
+    color: var(--color-danger);              
 }
 
 .task-condition{
     display: flex;
-    gap: 0.5rem;
+    gap: var(--space-sm);
 }
 
 .task-condition button{
-    padding: 0.4rem 1rem;
+    padding: var(--space-sm) var(--space-lg);
     font: inherit;
-    color: #5b6676;
+    color: var(--color-text-muted);
     background: transparent;     
     border: 1px solid transparent;
-    border-radius: 0.5rem;
+    border-radius: var(--radius);
     cursor: pointer;
 }
 
 .task-condition button:hover{
-    color: #1c2430;
+    color: var(--color-text);
 }
 
 .task-condition button.is-active{
-    color: #1c2430;
-    background: white;           
-    border-color: #d9dee6;
+    color: var(--color-text);
+    background: var(--color-surface);           
+    border-color: var(--color-border);
 }
 
 .tasks-left{
-    color: #5b6676;
+    color: var(--color-text-muted);
 }
 
 .todo-form{
     display: flex;
-    gap: 0.75rem;
+    gap: var(--space-md);
     width: 100%;
 }
 
 .todo-form input{
     flex: 1;
-    padding: 0.75rem 1rem;
+    padding: var(--space-md) var(--space-lg);
     font: inherit;
-    border: 1px solid #d9dee6;
-    border-radius: 0.5rem;
-    background: white;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    background: var(--color-surface);
 }
 
 .todo-form input:focus{
-    outline: 2px solid #2f5fd0;
+    outline: 2px solid var(--color-primary);
     outline-offset: 1px;
 }
