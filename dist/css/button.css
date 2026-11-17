@@ -2,12 +2,15 @@
     display: inline-block;
     padding: var(--space-md) var(--space-xl);
     background: var(--color-primary);
-    color: white; 
+    color: white;
+    font: inherit; 
     font-weight: 600; 
     text-decoration: none;
     cursor: pointer;
     border-radius: var(--radius); 
+    border: none;    
 }
+
 .btn:hover{
     background: var(--color-primary-hover);
 }

@@ -13,10 +13,10 @@
             <nav class="site-nav">
                 <ul>
                     <li>
-                        <a class="site-nav_link" href="index.html" aria-current="page">Tasks</a>
+                        <a class="site-nav__link" href="index.html" aria-current="page">Tasks</a>
                     </li>
                     <li>
-                        <a class="site-nav_link" href="about.html" >About </a>
+                        <a class="site-nav__link" href="about.html" >About </a>
                     </li>
                 </ul>
             </nav>
@@ -27,7 +27,8 @@
 
             <h1>My tasks</h1>
             <form class="todo-form">
-                <input type="text" id="taskType" name="taskType" placeholder="What needs to be done?">
+                <label for="taskType">New Task</label>
+                <input type="text" id="taskType" name="taskType" placeholder="What needs to be done?" required>
                 <button type="submit" class="btn">Add</button>
             </form>
             <div class="task-condition">
@@ -38,14 +39,12 @@
             <ul class="todo-list">
                 <li class="todo-item">
                     <input type="checkbox" id="task-1">
-                    <label for="task-1">Buy milk</label>
+                    <label for="task-1" class="todo-item__title">Buy milk</label>
                     <button type="button" class="todo-delete" aria-label="Delete task">×</button>
                 </li>
 
             </ul>
-        </div>
-        <div>
-            <p>Tasks left:</p>
+            <p class="todo-count">Tasks left:</p>
         </div>
     </main>
    

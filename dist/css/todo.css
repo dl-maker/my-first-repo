@@ -63,7 +63,7 @@
     border-color: var(--color-border);
 }
 
-.tasks-left{
+.todo-count{
     color: var(--color-text-muted);
 }
 
@@ -85,4 +85,9 @@
 .todo-form input:focus{
     outline: 2px solid var(--color-primary);
     outline-offset: 1px;
+}
+
+.todo-item.is-completed .todo-item__title{
+    text-decoration: line-through;
+    color: var(--color-text-muted);
 }
