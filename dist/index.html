@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taskly</title>
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/app.js" defer></script>
+
 </head>
 <body>
     <header class="site-header">
-        <div class="header-bar">
+        <div class="header-bar container">
             <h1>Taskly</h1>
             <nav class="site-nav">
                 <ul>
@@ -23,28 +25,29 @@
         </div>
     </header>
     <main class="site-main">
-        <div class="main-container">
+        <div class="main-container container">
 
             <h1>My tasks</h1>
-            <form class="todo-form">
-                <label for="taskType">New Task</label>
-                <input type="text" id="taskType" name="taskType" placeholder="What needs to be done?" required>
+            <form class="todo-form" data-todo-form>
+                <input type="text" id="taskType" name="taskType" placeholder="What needs to be done?" data-todo-input required>
                 <button type="submit" class="btn">Add</button>
             </form>
-            <div class="task-condition">
-                <button type="button">All</button>
-                <button type="button">Active</button>
-                <button type="button">Completed</button>
+            <div class="task-condition" data-todo-filters>
+                <button type="button" data-filter="all" class="is-active" aria-pressed="true">All</button>
+                <button type="button" data-filter="active" aria-pressed="false">Active</button>
+                <button type="button" data-filter="completed" aria-pressed="false">Completed</button>
             </div>
-            <ul class="todo-list">
-                <li class="todo-item">
-                    <input type="checkbox" id="task-1">
-                    <label for="task-1" class="todo-item__title">Buy milk</label>
-                    <button type="button" class="todo-delete" aria-label="Delete task">×</button>
-                </li>
+            <ul class="todo-list" data-todo-list></ul>
 
-            </ul>
-            <p class="todo-count">Tasks left:</p>
+            <template data-todo-template>
+                <li class="todo-item">
+                    <input type="checkbox" class="todo-item__checkbox" data-todo-toggle>
+                    <label class="todo-item__title"></label>
+                    <button type="button" class="todo-delete" aria-label="Delete task" data-todo-delete>×</button>
+                </li>
+            </template>
+
+            <p class="todo-count" data-todo-count>Tasks left:</p>
         </div>
     </main>
    
